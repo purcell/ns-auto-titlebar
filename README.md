@@ -7,8 +7,8 @@ ns-auto-titlebar.el
 
 Recent builds of Emacs (27, 26?) support transparent titlebars on
 MacOS via the `ns-transparent-titlebar` and `ns-appearance` frame
-properties. The latter indicates whether the titlebar background is
-considered `dark` or `light`, and it is not set automatically by
+properties. The latter indicates whether the titlebar background
+should be `dark` or `light`, and it is not set automatically by
 Emacs. However, the text colour is always taken from the current
 theme, which can lead to unreadable titlebar text if `ns-appearance`
 is not set correctly.
