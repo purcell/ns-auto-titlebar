@@ -5,10 +5,17 @@
 ns-auto-titlebar.el
 ===================
 
-Provides a global minor mode, `ns-auto-titlebar-mode` which - when
-enabled - keeps the "ns-appearance" frame parameter correctly set in
-GUI frames so that it matches the currently-enabled theme, whether it
-is light or dark.
+Recent builds of Emacs (27, 26?) support transparent titlebars via the
+`ns-transparent-titlebar` and `ns-appearance` frame properties. The
+latter indicates whether the titlebar background is considered `dark`
+or `light`, and it is not set automatically by Emacs. However, the
+text colour is always taken from the current theme, which can lead to
+unreadable titlebar text if `ns-appearance` is not set correctly.
+
+This Emacs package provides a global minor mode,
+`ns-auto-titlebar-mode` which - when enabled - keeps the
+"ns-appearance" frame parameter correctly set in GUI frames so that it
+matches the currently-enabled theme, whether it is light or dark.
 
 Installation
 =============
