@@ -64,8 +64,7 @@
 
 (add-hook 'after-init-hook 'ns-auto-titlebar-set-all-frames)
 (add-hook 'after-make-frame-functions 'ns-auto-titlebar-set-frame)
-(advice-add 'load-theme :after 'ns-auto-titlebar-set-all-frames)
-(advice-add 'enable-theme :after 'ns-auto-titlebar-set-all-frames)
+(advice-add 'frame-set-background-mode :after 'ns-auto-titlebar-set-frame)
 
 
 (provide 'ns-auto-titlebar)
