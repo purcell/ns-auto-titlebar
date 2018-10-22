@@ -18,6 +18,11 @@ This Emacs package provides a global minor mode,
 "ns-appearance" frame parameter correctly set in GUI frames so that it
 matches the currently-enabled theme, whether it is light or dark.
 
+For this package to work correctly, it is generally necessary that the
+theme you use sets the `frame-background-mode` variable appropriately.
+This can be set manually if necessary, but see the docs for that
+variable.
+
 Installation
 =============
 
