@@ -50,7 +50,7 @@
   (when ns-auto-titlebar-mode
     (ns-auto-titlebar-set-all-frames)))
 
-(defun ns-auto-titlebar-set-frame (frame)
+(defun ns-auto-titlebar-set-frame (frame &rest _)
   "Set ns-appearance frame parameter for FRAME to match its background-mode parameter."
   (when (and ns-auto-titlebar-mode
              (display-graphic-p frame))
