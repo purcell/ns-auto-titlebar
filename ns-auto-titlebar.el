@@ -47,7 +47,8 @@
 
 (defun ns-auto-titlebar-set-frame (frame)
   "Set ns-appearance frame parameter for FRAME to match its background-mode parameter."
-  (when ns-auto-titlebar-mode
+  (when (and ns-auto-titlebar-mode
+             (display-graphic-p frame))
     (let ((mode (frame-parameter frame 'background-mode)))
       (modify-frame-parameters frame `((ns-transparent-titlebar . t) (ns-appearance . ,mode))))))
 
