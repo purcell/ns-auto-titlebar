@@ -54,7 +54,7 @@
 (defun ns-auto-titlebar-set-all-frames (&rest _)
   "Set ns-appearance frame parameter for all frames to match their background-mode parameter."
   (when ns-auto-titlebar-mode
-    (mapc 'sanityinc/set-frame-ns-appearance (frame-list))))
+    (mapc 'ns-auto-titlebar-set-frame (frame-list))))
 
 (add-hook 'after-init-hook 'ns-auto-titlebar-set-all-frames)
 (add-hook 'after-make-frame-functions 'ns-auto-titlebar-set-frame)
