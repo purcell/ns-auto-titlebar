@@ -36,7 +36,7 @@ Usage
 
 Enable `ns-auto-titlebar-mode` with `M-x customize`, or like this:
 
-```lisp
+```elisp
 (when (eq system-type 'darwin) (ns-auto-titlebar-mode))
 ```
 Note that it is safe to omit the "when" condition if you prefer.
