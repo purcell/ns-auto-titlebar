@@ -51,5 +51,3 @@ Note that it is safe to omit the "when" condition if you prefer.
 [💼 LinkedIn profile](https://uk.linkedin.com/in/stevepurcell)
 
 [✍ sanityinc.com](http://www.sanityinc.com/)
-
-[🐦 @sanityinc](https://twitter.com/sanityinc)
